@@ -68,108 +68,195 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
-/* Header Styles */
+/* Header Styles */ 
+/*----------------at 768 px and below do the following -----------------------------------------*/
+@media (max-width: 768px){
+    header nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    header .logo {
+        margin: 28px 140px 0 0;
+    }
+}
 
+/* AT 400px and below do the following */
+@media (max-width: 400px){
 header {
-    width: 100%;
-    display: flex;
+    width: 400px;
+    justify-content: center;
+    flex-wrap: wrap reverse;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+    border-top: 2px solid gray;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
 }
 
+
 header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+    /* display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center; */
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px solid gray;
+    justify-content: space-evenly;
 }
 
 header nav a:hover {
-    text-decoration: underline;
-    color: black;
+    display:flex;
+    padding: 20px 0;
+    border-bottom: 2px solid gray;
+    justify-content: space-evenly;
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    align-self: center;
+    margin: 28px 0 10px 0;
+}
+}
+/* ------------------------Call To Action (CTA) Styles ---------------------------------*/
+@media (max-width: 768px){
+    .cta {
+        justify-content: space-evenly;
+        margin: 72px 120px 0 0;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
 }
 
-/* Call To Action (CTA) Styles */
-
+/* At 400px and below do the following */
+@media (max-width:400px){
 .cta {
-    display: flex;
+    /* display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: flex-end; */
+    flex-wrap: wrap;
+    margin-right: 400px;
+    margin-top: 20px;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /* font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 82px 0 0; */
+    margin-right: 82px;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
+    /* border: 1px double black;
     font-size: 16px;
     background: white;
     width: 170px;
     height: 32px;
     margin-top: 10px;
-    cursor: pointer;
+    cursor: pointer; */
+    border: 1px double black;
+    margin: 10px 0 40px 0;
 }
 
 .cta .cta-text button:hover {
     background: black;
     color: white;
 }
+.cta img {
+    max-width: 80%;
+    margin-right:  80px;
+    }
+}
 
 /* Main Content Styles */
-
+/* AT 768px and below do the following */
+@media(max-width: 768px) {
+    .main-content {
+        margin: 75px 130px 75px 20px;
+    }
+    .main-content .top-content {
+        justify-content: space-evenly;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+}
+/* AT 400ox and below do the following */
+@media (max-width:400px) {
 .main-content {
-   border-top: 2px solid black; 
+   /* border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
-   line-height: 18px;
+   line-height: 18px; */
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 500px 0 15px;
+    padding: 10px 0;
 }
 
 .main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
+    height: 250px;
+    flex-direction: column;
 }
 
 .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+    margin: 10px 0 20px 0;
 }
 
 .main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
 }
 
-.main-content .bottom-content p {
+/* .main-content .bottom-content p {
     padding-right: 20px;
-}
-
-/* Contact Styles */
+    }
+} */
+/* ----------------------------Contact Styles ---------------------------*/
 
 .contact p {
     margin: 15px 0;
 }
+@media(max-width:768px){
+    .contact {
+        margin-left:20px;
+    }
+}
 
-/* Footer Styles */
+@media(max-width: 400px) {
+    .contact {
+        margin-top: 30px;
+    }
+}
+
+/* ----------------Footer Styles ---------------------*/
 
 footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media(max-width: 768px){
+    footer {
+        margin-right:100px;
+    }
+}
+
+@media(max_width:400px){
+    footer {
+        margin-right: 490px;
+    }
+}} 
